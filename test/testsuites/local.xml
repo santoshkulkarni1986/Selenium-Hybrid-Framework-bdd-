@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Single Test Suite" parallel="tests" thread-count="1">
+    <test name="Test With Chrome">
+        <parameter name="browser" value="chrome" />
+        <parameter name="url" value="https://practicetestautomation.com/practice-test-login/" />
+        <parameter name="featureName" value="Login Functionality" />
+        <classes>
+            <class name="com.kushi.runner.LoginRunner" />
+        </classes>
+    </test>
+   <!-- </test>
+    
+       <test name="Test With Chrome ORG HRM">
+        <parameter name="browser" value="firefox" />
+        <parameter name="url" value="https://practicetestautomation.com/practice-test-login/" />
+        <parameter name="featureName" value="Login Functionality" />
+        <classes>
+            <class name="com.kushi.runner.LoginRunner" />
+        </classes>
+    </test>-->
+</suite>
